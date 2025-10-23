@@ -1,10 +1,7 @@
-# Опишите параметры функции calculate_watering().
-def calculate_watering(...):
-    # Здесь вместо ellipsis напишите код функции.
-    ...
+def calculate_watering(plant_type, number_of_plants, volume_per_plant = 2.5):
+    Number_of_waters = number_of_plants * volume_per_plant
+    return print(str(plant_type), number_of_plants, "шт.:","для полива требуется", Number_of_waters , "л воды." )
 
-# Не изменяйте код ниже этого комментария: 
-# если ваша функция написана правильно - эти вызовы должны успешно сработать.
 
 # Вызов функции с позиционными аргументами:
 calculate_watering('Артишоки', 20, 4)
