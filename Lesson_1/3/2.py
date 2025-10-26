@@ -1,9 +1,9 @@
 def get_season(month):
     winter = ["декабрь", "январь", "февраль"]
-    spring = ["март", "апрель", "май"]  
+    spring = ["март", "апрель", "май"]
     summer = ["июнь", "июль", "август"]
     autumn = ["сентябрь", "октябрь", "ноябрь"]
-    
+
     if month in winter:
         return "зима"
     elif month in spring:
@@ -15,6 +15,7 @@ def get_season(month):
     else:
         return "Ошибка в написании месяца!"
 
+
 # Тестирование функции
-print(get_season("июнь"))      
-print(get_season("мартобрь"))  
+print(get_season("июнь"))
+print(get_season("мартобрь"))
