@@ -14,9 +14,6 @@ class Employee:
         return f"Остаток отпускных дней: {self.remaining_vacation_days}."
 
 
-# Расширьте класс Employee, создав классы FullTimeEmployee и PartTimeEmployee.
-
-
 class FullTimeEmployee(Employee):
     def get_unpaid_vacation(self, start_date_of_not_payment_vacation, days_of_vacation):
         return (
