@@ -75,3 +75,5 @@ if __name__ == "__main__":
         if "победил" in message or "Ничья" in message:
             game.display()
             break
+
+print(print.__doc__)
