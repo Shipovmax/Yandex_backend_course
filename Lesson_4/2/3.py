@@ -1,0 +1,18 @@
+import requests as rq
+
+url = "https://wttr.in"
+
+weather_parameters = {
+    "0": "",
+    "T": "",
+    "M": "",
+}
+
+request_headers = {
+    "Accept-Language": "ru"  # заполните словарь с заголовками
+}
+
+# не забудьте передать параметры и заголовки в http-запрос
+# через аргументы `params` и `headers` функции get()
+response = rq.get(url, params=weather_parameters, headers=request_headers)
+print(response.text)
