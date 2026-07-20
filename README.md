@@ -57,6 +57,45 @@ Yandex_backend_course/
 
 ---
 
+## Running Tests
+
+`Lesson_2/1` contains a `pytest` example (`test_program.py` + `pytest.ini`).
+To run it:
+
+```bash
+cd Lesson_2/1
+pip install pytest
+pytest -vv
+```
+
+Note: this particular test targets a `practicum` module (the course
+platform's expected solution filename), which isn't part of this repo, so
+running it standalone will fail at collection with
+`ModuleNotFoundError: No module named 'practicum'`. This is a limitation of
+how the exercise was submitted originally, not a regression.
+
+Most other exercises are standalone scripts — run them directly, e.g.:
+
+```bash
+python3 Lesson_1/6/1.py
+```
+
+## Running the Django Project
+
+`Lesson_4/3/project` is a small multi-app Django project
+(`anfisa_for_friends`, with `homepage`, `about`, and `ice_cream` apps).
+
+```bash
+cd Lesson_4/3/project
+pip install django
+python3 manage.py migrate
+python3 manage.py runserver
+```
+
+`python3 manage.py check` passes cleanly with no issues.
+
+---
+
 ## Author
 
 - GitHub: [Shipovmax](https://github.com/Shipovmax)
