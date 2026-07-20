@@ -8,9 +8,7 @@ weather_parameters = {
     "M": "",
 }
 
-request_headers = {
-    "Accept-Language": "ru"  # заполните словарь с заголовками
-}
+request_headers = {"Accept-Language": "ru"}  # заполните словарь с заголовками
 
 # не забудьте передать параметры и заголовки в http-запрос
 # через аргументы `params` и `headers` функции get()

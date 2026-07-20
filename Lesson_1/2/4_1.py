@@ -3,4 +3,4 @@ def solve_expression():
     return result == 5
 
 
-print('Верно посчитано?', solve_expression())
+print("Верно посчитано?", solve_expression())

@@ -7,8 +7,10 @@ def say_to_all(func, sequence):
 
 
 say_to_all(
-    lambda name: print(f"Здравствуй, {name}!")
-    if name.startswith("С")
-    else print(f"Привет, {name}!"),
+    lambda name: (
+        print(f"Здравствуй, {name}!")
+        if name.startswith("С")
+        else print(f"Привет, {name}!")
+    ),
     people,
 )

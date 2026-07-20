@@ -10,7 +10,7 @@ class Customer:
         discounted_price = price * (100 - self.__discount) / 100
         # Округляем до двух знаков после запятой
         return round(discounted_price, 2)
-    
+
     def set_discount(self, new_discount):
         # Проверяем, что скидка не превышает 80%
         if new_discount > 80:
